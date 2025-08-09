@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="author" content="Abhishek Patel">
+  <meta property="og:type" content="article" data-preact-helmet="true">
+  <meta name="theme-color" content="#ffffff" data-preact-helmet="true">
+  <meta property="og:title" content="Abhishek Patel" data-preact-helmet="true">
+  <meta name="description" content="Selected research papers, notes, and highlights curated by Abhishek Patel."
+    data-preact-helmet="true">
+  <meta property="og:description" content="Selected research papers, notes, and highlights curated by Abhishek Patel."
+    data-preact-helmet="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papers - Abhishek Patel</title>
+
+  <link rel="canonical" href="https://akpateltech.me/">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.jpg">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicons/favicon-48x48.jpg">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.jpg">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.jpg">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.jpg">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.jpg">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.jpg">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.jpg">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.jpg">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.jpg">
+  <link rel="apple-touch-icon" sizes="167x167" href="favicons/apple-touch-icon-167x167.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.jpg">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="favicons/apple-touch-icon-1024x1024.jpg">
+
+  <!-- Fonts (match site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Birthstone&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Birthstone&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    h4,
+    h5 {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .page-wrap {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .page-wrap {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .page-wrap {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 via-white to-slate-100 text-slate-900">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70 shadow-sm">
+    <div class="page-wrap py-4 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div
+          class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+          <span class="text-white font-bold tracking-tight">AP</span>
+        </div>
+        <div class="font-extrabold tracking-tight text-3xl sm:text-4xl lg:text-5xl"
+          style="font-family:'Birthstone', serif;">Abhishek Patel</div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-5 text-sm font-medium">
+        <a href="index.html" class="hover:text-purple-600 transition">Home</a>
+        <a href="papers.html" class="text-purple-700 font-semibold">Papers</a>
+        <a href="books.html" class="hover:text-purple-600 transition">Books</a>
+      </nav>
+
+      <button id="menu-btn" aria-controls="mobile-menu" aria-expanded="false"
+        class="md:hidden p-2 rounded-lg hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden absolute left-0 right-0 top-full bg-white shadow-md z-50">
+      <div class="page-wrap py-3 divide-y divide-slate-100">
+        <div class="flex flex-col gap-0">
+          <a href="index.html" class="block py-3 text-sm font-medium text-slate-700 hover:text-purple-600">Home</a>
+          <a href="papers.html" class="block py-3 text-sm font-medium text-slate-700 hover:text-purple-600">Papers</a>
+          <a href="books.html" class="block py-3 text-sm font-medium text-slate-700 hover:text-purple-600">Books</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page intro -->
+  <section class="page-wrap py-10 md:py-14">
+    <style>
+      @scope {
+        a {
+          color: blue;
+          text-decoration: none;
+          transition: color 180ms ease, text-decoration-color 180ms ease, box-shadow 180ms ease;
+        }
+
+        a:hover {
+          color: #6d28d9;
+          text-decoration: underline;
+          text-decoration-color: rgba(109, 40, 217, 0.6);
+        }
+
+        a:focus-visible {
+          outline: 2px solid transparent;
+          box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.35);
+          border-radius: 4px;
+        }
+
+        a:active {
+          color: #5b21b6;
+        }
+      }
+    </style>
+
+    <div class="max-w-3xl">
+      <p class="text-2xl font-semibold text-pink-600 tracking-wide uppercase">Papers</p>
+      <div class="mt-4 text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight text-slate-900">
+        Top papers for system design</div>
+      <div class="mt-6 space-y-4 text-slate-600 text-sm sm:text-base">
+       A curated collection of seminal papers and essays for system design interviews—covering time, consensus, failure handling, storage, data processing, coordination, observability, and secure architecture—with searchable, filterable entries and concise notes for quick exploration.
+        </p>
+      </div>
+
+      <!-- Search + Tags -->
+      <div class="mt-8 flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+          <div class="relative flex-1">
+            <input id="search" type="text" placeholder="Search by title, author, year, venue, or tag..."
+              class="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent shadow-sm" />
+            <svg class="absolute right-3 top-2.5 h-5 w-5 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m21 21-4.35-4.35M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+            </svg>
+          </div>
+          <select id="yearFilter"
+            class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent shadow-sm">
+            <option value="">All years</option>
+          </select>
+        </div>
+
+        <div id="tags" class="flex flex-wrap gap-2"></div>
+      </div>
+
+      <!-- Featured -->
+      <div class="mt-10">
+        <h2 class="text-xl font-bold text-slate-900">Featured</h2>
+        <div id="featured" class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+
+      <!-- All Papers -->
+      <div class="mt-10">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-bold text-slate-900">All papers</h2>
+          <div class="text-xs text-slate-500"><span id="count">0</span> results</div>
+        </div>
+        <div id="list" class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+
+        <div id="empty" class="hidden mt-8 rounded-lg border border-slate-200 bg-white p-6 text-center text-slate-600">
+          No papers match your filters. Try clearing tags or search.
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-12 border-t border-slate-300 bg-slate-200">
+    <div class="page-wrap py-10 grid md:grid-cols-4 gap-8 text-slate-700">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-md">
+            <span class="text-white font-bold tracking-tight">AP</span>
+          </div>
+          <div class="font-extrabold tracking-tight text-3xl sm:text-4xl lg:text-5xl"
+            style="font-family:'Birthstone', serif;">Abhishek Patel</div>
+        </div>
+      </div>
+      <div>
+        <h5 class="text-sm font-semibold text-slate-900 mb-4 tracking-wide">Quick Links</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-purple-600 transition">About</a></li>
+          <li><a href="contact.html" class="hover:text-purple-600 transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-sm font-semibold text-slate-900 mb-4 tracking-wide">Connect</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="https://linkedin.com/in/akpateltech" target="_blank"
+              class="hover:text-purple-600 transition">LinkedIn</a></li>
+          <li><a href="https://github.com/akpateltech" target="_blank"
+              class="hover:text-purple-600 transition">GitHub</a></li>
+          <li><a href="https://youtube.com/@akpateltech" target="_blank"
+              class="hover:text-purple-600 transition">YouTube</a></li>
+          <li><a href="https://topmate.io/akpateltech" target="_blank"
+              class="hover:text-purple-600 transition">Topmate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-sm font-semibold text-slate-900 mb-4 tracking-wide">Newsletter</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="https://www.linkedin.com/newsletters/abhishek-s-newsletter-7359833289383165953/" target="_blank"
+              class="hover:text-purple-600 transition">Subscribe on LinkedIn</a></li>
+          <li><a href="https://akpateltech.substack.com/" target="_blank"
+              class="hover:text-purple-600 transition">Subscribe on Substack</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-wrap border-t border-slate-200 mt-6 pt-5 text-sm text-slate-500 text-left">
+      © Abhishek Patel, <span id="footer-year"></span>
+    </div>
+    <br><br><br>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // Mobile menu behavior
+    const menuBtn = document.getElementById('menu-btn');
+    const header = document.querySelector('header');
+    const mobileMenu = document.getElementById('mobile-menu');
+    function closeMenu() { mobileMenu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', 'false'); }
+    menuBtn.addEventListener('click', (e) => { e.stopPropagation(); mobileMenu.classList.toggle('hidden'); const expanded = menuBtn.getAttribute('aria-expanded') === 'true'; menuBtn.setAttribute('aria-expanded', String(!expanded)); });
+    document.addEventListener('click', (e) => { if (!header.contains(e.target)) closeMenu(); });
+    window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMenu(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+
+    // Papers from the attached PDF
+    const PAPERS = [];
+    // const PAPERS = [
+    //   // Core Distributed Systems Fundamentals
+    //   {
+    //     title: "Time, Clocks, and the Ordering of Events in a Distributed System",
+    //     authors: "Leslie Lamport",
+    //     year: 1978,
+    //     venue: "CACM",
+    //     url: "#",
+    //     tags: ["fundamentals","time","ordering","distributed-systems"],
+    //     featured: true,
+    //     notes: "Logical clocks and partial ordering; foundational for reasoning about events and causality in distributed systems."
+    //   },
+    //   {
+    //     title: "The Byzantine Generals Problem",
+    //     authors: "Leslie Lamport, Robert Shostak, Marshall Pease",
+    //     year: 1982,
+    //     venue: "ACM TOPLAS",
+    //     url: "#",
+    //     tags: ["consensus","byzantine","fault-tolerance","fundamentals"],
+    //     featured: true,
+    //     notes: "Consensus in the presence of Byzantine faults; underpins robust consensus and blockchain-inspired models."
+    //   },
+    //   {
+    //     title: "Impossibility of Distributed Consensus with One Faulty Process (FLP)",
+    //     authors: "Michael J. Fischer, Nancy A. Lynch, Mike Paterson",
+    //     year: 1985,
+    //     venue: "JACM",
+    //     url: "#",
+    //     tags: ["consensus","theory","asynchrony","fundamentals"],
+    //     featured: true,
+    //     notes: "Shows deterministic consensus is impossible in fully asynchronous systems with even one faulty process."
+    //   },
+    //   {
+    //     title: "Distributed Snapshots: Determining Global States of Distributed Systems",
+    //     authors: "K. Mani Chandy, Leslie Lamport",
+    //     year: 1985,
+    //     venue: "ACM TOCS",
+    //     url: "#",
+    //     tags: ["snapshots","checkpointing","debugging","fundamentals"],
+    //     featured: false,
+    //     notes: "Snapshot algorithm for consistent global states; basis for checkpointing, debugging, and recovery."
+    //   },
+    //   {
+    //     title: "Unreliable Failure Detectors and Reliable Distributed Systems",
+    //     authors: "Tushar Deepak Chandra, Sam Toueg",
+    //     year: 1996,
+    //     venue: "JACM",
+    //     url: "#",
+    //     tags: ["failure-detectors","consensus","fault-tolerance","fundamentals"],
+    //     featured: false,
+    //     notes: "Failure detector abstractions bridging impossibility results with practical consensus implementations."
+    //   },
+
+    //   // End-to-End Principles, Interfaces, Economics
+    //   {
+    //     title: "End-to-End Arguments in System Design",
+    //     authors: "J. H. Saltzer, D. P. Reed, D. D. Clark",
+    //     year: 1984,
+    //     venue: "ACM TOCS",
+    //     url: "#",
+    //     tags: ["design-principles","end-to-end","architecture"],
+    //     featured: true,
+    //     notes: "Guides placement of functionality at endpoints vs. network; influences API boundaries and trade-offs."
+    //   },
+    //   {
+    //     title: "A Note on Distributed Computing",
+    //     authors: "Jim Waldo, Geoff Wyant, Ann Wollrath, Sam Kendall",
+    //     year: 1994,
+    //     venue: "Sun Microsystems (1994/1996)",
+    //     url: "#",
+    //     tags: ["distributed-computing","rpc","semantics","design-principles"],
+    //     featured: false,
+    //     notes: "Why distribution differs from local calls; cautions against transparent RPC semantics."
+    //   },
+    //   {
+    //     title: "Hints for Computer System Design",
+    //     authors: "Butler W. Lampson",
+    //     year: 1983,
+    //     venue: "SOSP",
+    //     url: "#",
+    //     tags: ["design-principles","simplicity","performance","fault-tolerance"],
+    //     featured: true,
+    //     notes: "Timeless engineering rules-of-thumb on simplicity, performance, and reliability."
+    //   },
+    //   {
+    //     title: "Rules of Thumb in Data Engineering",
+    //     authors: "Surajit Chaudhuri, Vivek Narasayya, et al. (often attributed to Jim Gray & Prashant Shenoy heuristics)",
+    //     year: 2000,
+    //     venue: "Heuristics/Practitioner",
+    //     url: "#",
+    //     tags: ["capacity-planning","data-engineering","heuristics"],
+    //     featured: false,
+    //     notes: "Practical capacity planning and data engineering heuristics to inform sizing and trade-offs."
+    //   },
+
+    //   // Storage Systems and Consistency
+    //   {
+    //     title: "The Google File System (GFS)",
+    //     authors: "Sanjay Ghemawat, Howard Gobioff, Shun-Tak Leung",
+    //     year: 2003,
+    //     venue: "SOSP",
+    //     url: "#",
+    //     tags: ["storage","filesystems","gfs","distributed-systems"],
+    //     featured: true,
+    //     notes: "Chunk servers, single master metadata, large blocks, and relaxed consistency for large-scale workloads."
+    //   },
+    //   {
+    //     title: "Bigtable: A Distributed Storage System for Structured Data",
+    //     authors: "Fay Chang et al.",
+    //     year: 2006,
+    //     venue: "OSDI",
+    //     url: "#",
+    //     tags: ["databases","wide-column","storage","bigtable"],
+    //     featured: true,
+    //     notes: "Wide-column store; tablets, compaction, and locality; influenced HBase and Cassandra."
+    //   },
+    //   {
+    //     title: "Dynamo: Amazon’s Highly Available Key-value Store",
+    //     authors: "Giuseppe DeCandia et al.",
+    //     year: 2007,
+    //     venue: "SOSP",
+    //     url: "#",
+    //     tags: ["databases","availability","eventual-consistency","key-value","consistent-hashing"],
+    //     featured: true,
+    //     notes: "Consistent hashing, hinted handoff, vector clocks, tunable consistency (N,R,W); AP-leaning design."
+    //   },
+    //   {
+    //     title: "Spanner: Google’s Globally-Distributed Database",
+    //     authors: "James C. Corbett et al.",
+    //     year: 2012,
+    //     venue: "OSDI",
+    //     url: "#",
+    //     tags: ["databases","consistency","true-time","distributed-sql"],
+    //     featured: true,
+    //     notes: "Externally consistent transactions using TrueTime; automatic sharding and MVCC."
+    //   },
+    //   {
+    //     title: "The Log-Structured Merge-Tree (LSM-Tree)",
+    //     authors: "Patrick O’Neil, Edward Cheng, Dieter Gawlick, Elizabeth O’Neil",
+    //     year: 1996,
+    //     venue: "Acta Informatica",
+    //     url: "#",
+    //     tags: ["indexing","storage","lsm","databases"],
+    //     featured: false,
+    //     notes: "Write-optimized indexing; foundation for LevelDB, RocksDB, HBase, Cassandra."
+    //   },
+    //   {
+    //     title: "The Chubby Lock Service for Loosely-Coupled Distributed Systems",
+    //     authors: "Mike Burrows",
+    //     year: 2006,
+    //     venue: "OSDI",
+    //     url: "#",
+    //     tags: ["coordination","locking","service-discovery","leader-election"],
+    //     featured: false,
+    //     notes: "Coarse-grained locking, service discovery, and master election at Google scale."
+    //   },
+    //   {
+    //     title: "ZooKeeper: Wait-free coordination for Internet-scale systems",
+    //     authors: "Patrick Hunt, Mahadev Konar, Flavio P. Junqueira, Benjamin Reed",
+    //     year: 2010,
+    //     venue: "USENIX ATC",
+    //     url: "#",
+    //     tags: ["coordination","zookeeper","consensus","config"],
+    //     featured: false,
+    //     notes: "Coordination primitives (znodes, watches) and consensus-backed config/lock service."
+    //   },
+
+    //   // Data Processing and Streaming
+    //   {
+    //     title: "MapReduce: Simplified Data Processing on Large Clusters",
+    //     authors: "Jeffrey Dean, Sanjay Ghemawat",
+    //     year: 2004,
+    //     venue: "OSDI",
+    //     url: "#",
+    //     tags: ["data-processing","batch","mapreduce","distributed-systems"],
+    //     featured: true,
+    //     notes: "Scalable batch programming model; failure handling via re-execution and deterministic tasks."
+    //   },
+    //   {
+    //     title: "Kafka: a Distributed Messaging System for Log Processing",
+    //     authors: "Jay Kreps, Neha Narkhede, Jun Rao",
+    //     year: 2011,
+    //     venue: "NetDB",
+    //     url: "#",
+    //     tags: ["streaming","messaging","commit-log","kafka"],
+    //     featured: false,
+    //     notes: "Append-only commit log, partitioned topics, pull consumers; high throughput over strict consistency."
+    //   },
+    //   {
+    //     title: "Epidemic Algorithms for Replicated Database Maintenance",
+    //     authors: "Alan Demers et al.",
+    //     year: 1987,
+    //     venue: "PODC",
+    //     url: "#",
+    //     tags: ["gossip","replication","eventual-consistency"],
+    //     featured: false,
+    //     notes: "Gossip/epidemic protocols for scalable, eventually consistent replication."
+    //   },
+
+    //   // Caching, Coordination, Availability
+    //   {
+    //     title: "The Part-Time Parliament (Paxos)",
+    //     authors: "Leslie Lamport",
+    //     year: 1998,
+    //     venue: "ACM TOCS",
+    //     url: "#",
+    //     tags: ["consensus","paxos","replication","availability"],
+    //     featured: true,
+    //     notes: "Foundational consensus ensuring safety under failures; basis for many coordination systems."
+    //   },
+    //   {
+    //     title: "Viewstamped Replication Revisited",
+    //     authors: "Brian M. Oki, Barbara Liskov (1988 original), Liskov & Cowling (2012 retrospective)",
+    //     year: 2012,
+    //     venue: "MIT CSAIL TR / Retrospective",
+    //     url: "#",
+    //     tags: ["replication","consensus","state-machine"],
+    //     featured: false,
+    //     notes: "Replicated state machine approach; a Paxos-lineage alternative with historical perspective."
+    //   },
+    //   {
+    //     title: "CAP and Practical Tradeoffs",
+    //     authors: "Eric Brewer (conjecture) and subsequent formalizations",
+    //     year: 2000,
+    //     venue: "PODC (conjecture) + follow-ups",
+    //     url: "#",
+    //     tags: ["cap","consistency","availability","partitions"],
+    //     featured: false,
+    //     notes: "Trade-offs among consistency, availability, and partition tolerance; frames real-world design choices."
+    //   },
+
+    //   // Observability, Debugging, Resilience
+    //   {
+    //     title: "Path-Based Failure and Evolution Management",
+    //     authors: "Ming-Yee I. Chen, Emin Gun Sirer, Robbert van Renesse, Ken Birman",
+    //     year: 2004,
+    //     venue: "OSDI",
+    //     url: "#",
+    //     tags: ["observability","diagnostics","reliability"],
+    //     featured: false,
+    //     notes: "Uses request-path logs for diagnosing complex systems; groundwork for modern observability."
+    //   },
+    //   {
+    //     title: "Dapper/Zipkin-style Distributed Tracing (surveyed via curated lists)",
+    //     authors: "Google Dapper team et al.",
+    //     year: 2010,
+    //     venue: "Industry/Google",
+    //     url: "#",
+    //     tags: ["observability","tracing","diagnostics"],
+    //     featured: false,
+    //     notes: "Read after fundamentals to connect tracing with design trade-offs; lineage of Dapper-inspired systems."
+    //   },
+
+    //   // Security and Trust
+    //   {
+    //     title: "The Protection of Information in Computer Systems",
+    //     authors: "Jerome H. Saltzer, Michael D. Schroeder",
+    //     year: 1975,
+    //     venue: "Proceedings of the IEEE",
+    //     url: "#",
+    //     tags: ["security","principles","least-privilege"],
+    //     featured: false,
+    //     notes: "Security design principles like least privilege and fail-safe defaults; critical for service design."
+    //   },
+    //   {
+    //     title: "Using Encryption for Authentication in Large Networks of Computers",
+    //     authors: "Roger M. Needham, Michael D. Schroeder",
+    //     year: 1978,
+    //     venue: "CACM",
+    //     url: "#",
+    //     tags: ["security","authentication","key-distribution"],
+    //     featured: false,
+    //     notes: "Foundations of modern authentication: key distribution, replay protection, tickets."
+    //   },
+    //   {
+    //     title: "Reflections on Trusting Trust",
+    //     authors: "Ken Thompson",
+    //     year: 1984,
+    //     venue: "CACM / Turing Award Lecture",
+    //     url: "#",
+    //     tags: ["security","supply-chain","trust"],
+    //     featured: false,
+    //     notes: "Compiler backdoor thought experiment; motivates reproducible builds and defense in depth."
+    //   },
+
+    //   // Pragmatic Essays and Meta-Learning
+    //   {
+    //     title: "Fallacies of Distributed Computing",
+    //     authors: "Peter Deutsch et al.",
+    //     year: 1994,
+    //     venue: "Sun Microsystems (canonical list)",
+    //     url: "#",
+    //     tags: ["distributed-systems","fallacies","practice"],
+    //     featured: false,
+    //     notes: "Core misconceptions: network is reliable, latency is zero, bandwidth is infinite, etc."
+    //   },
+    //   {
+    //     title: "The Log: What Every Software Engineer Should Know About Real-time Data's Unifying Abstraction",
+    //     authors: "Jay Kreps",
+    //     year: 2013,
+    //     venue: "Essay/Blog",
+    //     url: "#",
+    //     tags: ["logs","streaming","architecture"],
+    //     featured: false,
+    //     notes: "Why logs unify batch, streaming, and recovery around a commit log abstraction."
+    //   },
+    //   {
+    //     title: "Worse is Better",
+    //     authors: "Richard P. Gabriel",
+    //     year: 1991,
+    //     venue: "Essay",
+    //     url: "#",
+    //     tags: ["design-philosophy","simplicity","evolution"],
+    //     featured: false,
+    //     notes: "Design philosophy favoring simplicity and evolvability; often aligns with shipping scalable systems."
+    //   },
+
+    //   // Curated Reading Lists (meta)
+    //   {
+    //     title: "Distributed Systems Classics (Curated List)",
+    //     authors: "Curated by N. Vartolomei (example listing)",
+    //     year: 2020,
+    //     venue: "Curated List",
+    //     url: "#",
+    //     tags: ["curated-list","syllabus","distributed-systems"],
+    //     featured: false,
+    //     notes: "Syllabus-style list including Lamport clocks, Byzantine generals, FLP, snapshots, and more."
+    //   },
+    //   {
+    //     title: "Distributed systems for fun and profit — Systems section",
+    //     authors: "Mikito Takada (Mixu)",
+    //     year: 2013,
+    //     venue: "Book/Website",
+    //     url: "#",
+    //     tags: ["curated-list","overview","systems"],
+    //     featured: false,
+    //     notes: "Covers GFS, MapReduce, Dynamo, Bigtable, Chubby, ZooKeeper; plus seminal/theory picks."
+    //   },
+    //   {
+    //     title: "Dan Cresswell’s Distributed Systems Reading List",
+    //     authors: "Dan Cresswell",
+    //     year: 2012,
+    //     venue: "Curated List",
+    //     url: "#",
+    //     tags: ["curated-list","breadth","reference"],
+    //     featured: false,
+    //     notes: "Broad collection used by many engineers to navigate important papers and topics."
+    //   },
+
+    //   // Bonus Modern Foundations
+    //   {
+    //     title: "Consistent Hashing and Random Trees",
+    //     authors: "David Karger et al. / Related CH work",
+    //     year: 1997,
+    //     venue: "STOC/Journal variants",
+    //     url: "#",
+    //     tags: ["consistent-hashing","partitioning","load-balancing"],
+    //     featured: false,
+    //     notes: "Foundational idea behind Dynamo-style partitioning and load distribution."
+    //   },
+    //   {
+    //     title: "Google’s F1 / Percolator lineage (overview)",
+    //     authors: "Google Research",
+    //     year: 2010,
+    //     venue: "PVLDB/OSDI (various)",
+    //     url: "#",
+    //     tags: ["incremental-processing","transactions","indexing"],
+    //     featured: false,
+    //     notes: "Transactional indexing and incremental processing that build on Bigtable/Spanner ideas."
+    //   },
+    //   {
+    //     title: "The Tail at Scale",
+    //     authors: "Jeff Dean, Luiz André Barroso",
+    //     year: 2013,
+    //     venue: "CACM",
+    //     url: "#",
+    //     tags: ["latency","reliability","performance"],
+    //     featured: true,
+    //     notes: "Techniques to reduce tail latency: hedged requests, isolation, better load distribution."
+    //   },
+    //   {
+    //     title: "Raft: In Search of an Understandable Consensus Algorithm",
+    //     authors: "Diego Ongaro, John Ousterhout",
+    //     year: 2014,
+    //     venue: "USENIX ATC",
+    //     url: "#",
+    //     tags: ["consensus","raft","replication"],
+    //     featured: true,
+    //     notes: "Leader-based consensus focusing on understandability; log replication and membership changes."
+    //   }
+    // ];
+
+    // Build tag set and year options
+    const tagsWrap = document.getElementById('tags');
+    const listEl = document.getElementById('list');
+    const featuredEl = document.getElementById('featured');
+    const searchEl = document.getElementById('search');
+    const yearFilterEl = document.getElementById('yearFilter');
+    const countEl = document.getElementById('count');
+    const emptyEl = document.getElementById('empty');
+
+    const allTags = Array.from(new Set(PAPERS.flatMap(p => p.tags))).sort();
+    const years = Array.from(new Set(PAPERS.map(p => p.year))).sort((a, b) => b - a);
+    years.forEach(y => {
+      const opt = document.createElement('option');
+      opt.value = String(y);
+      opt.textContent = y;
+      yearFilterEl.appendChild(opt);
+    });
+
+    const state = { q: "", year: "", tags: new Set() };
+
+    function tagPill(label) {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.textContent = label;
+      btn.className = "px-3 py-1 rounded-full text-xs border border-slate-200 bg-white text-slate-700 hover:border-purple-400 hover:text-purple-700 transition";
+      btn.addEventListener('click', () => {
+        if (state.tags.has(label)) state.tags.delete(label); else state.tags.add(label);
+        renderTags(); render();
+      });
+      return btn;
+    }
+
+    function renderTags() {
+      tagsWrap.innerHTML = "";
+      const selected = allTags.filter(t => state.tags.has(t));
+      const unselected = allTags.filter(t => !state.tags.has(t));
+
+      if (selected.length > 0) {
+        const clear = document.createElement('button');
+        clear.type = 'button';
+        clear.textContent = "Clear tags";
+        clear.className = "px-3 py-1 rounded-full text-xs bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow hover:opacity-95";
+        clear.addEventListener('click', () => { state.tags.clear(); renderTags(); render(); });
+        tagsWrap.appendChild(clear);
+      }
+
+      selected.forEach(t => {
+        const b = tagPill(t);
+        b.className += " !border-purple-500 !text-purple-700";
+        tagsWrap.appendChild(b);
+      });
+      unselected.forEach(t => tagsWrap.appendChild(tagPill(t)));
+    }
+
+    function card(p) {
+      const div = document.createElement('div');
+      div.className = "group rounded-xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition";
+
+      const top = document.createElement('div');
+      top.className = "flex items-start justify-between gap-3";
+
+      const title = document.createElement('a');
+      title.href = p.url || "#";
+      title.target = "_blank";
+      title.rel = "noopener";
+      title.className = "font-semibold text-slate-900 group-hover:text-purple-700";
+      title.textContent = p.title;
+
+      const meta = document.createElement('div');
+      meta.className = "text-xs text-slate-500 whitespace-nowrap";
+      meta.textContent = `${p.venue} • ${p.year}`;
+
+      top.appendChild(title);
+      top.appendChild(meta);
+
+      const authors = document.createElement('div');
+      authors.className = "mt-1 text-xs text-slate-600";
+      authors.textContent = p.authors;
+
+      const notes = document.createElement('p');
+      notes.className = "mt-3 text-sm text-slate-700";
+      notes.textContent = p.notes;
+
+      const tags = document.createElement('div');
+      tags.className = "mt-3 flex flex-wrap gap-1.5";
+      p.tags.forEach(t => {
+        const span = document.createElement('button');
+        span.type = "button";
+        span.textContent = t;
+        span.className = "px-2 py-0.5 rounded-full text-[11px] border border-slate-200 bg-slate-50 text-slate-700 hover:border-purple-400 hover:text-purple-700 transition";
+        span.addEventListener('click', () => {
+          if (state.tags.has(t)) state.tags.delete(t); else state.tags.add(t);
+          renderTags(); render();
+        });
+        tags.appendChild(span);
+      });
+
+      div.appendChild(top);
+      div.appendChild(authors);
+      div.appendChild(notes);
+      div.appendChild(tags);
+      return div;
+    }
+
+    function render() {
+      const q = state.q.trim().toLowerCase();
+      const filtered = PAPERS.filter(p => {
+        if (state.year && String(p.year) !== state.year) return false;
+        if (state.tags.size > 0) {
+          for (const t of state.tags) { if (!p.tags.includes(t)) return false; }
+        }
+        if (q) {
+          const hay = [p.title, p.authors, p.venue, String(p.year), ...(p.tags || [])].join(" ").toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      featuredEl.innerHTML = "";
+      filtered.filter(p => p.featured).forEach(p => featuredEl.appendChild(card(p)));
+
+      listEl.innerHTML = "";
+      filtered.forEach(p => listEl.appendChild(card(p)));
+      countEl.textContent = filtered.length;
+
+      emptyEl.classList.toggle('hidden', filtered.length > 0);
+    }
+
+    renderTags();
+    render();
+
+    searchEl.addEventListener('input', (e) => { state.q = e.target.value; render(); });
+    yearFilterEl.addEventListener('change', (e) => { state.year = e.target.value; render(); });
+  </script>
+</body>
+
+</html>
